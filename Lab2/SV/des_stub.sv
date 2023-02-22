@@ -28,15 +28,102 @@ module GenerateKeys (Key, SubKey1, SubKey2, SubKey3, SubKey4,
    output logic [47:0] SubKey15;
    output logic [47:0] SubKey16;
 
+   logic [27:0] templeft;
+   logic [27:0] tempright;
+
+	PC1 inst1PC1 (Key, 0, templeft, tempright);
+	PC2 inst1PC2 (templeft, tempright, SubKey1);
+
+	PC1 inst2PC1 (Key, 0, templeft, tempright);
+	PC2 inst2PC2 (templeft, tempright, SubKey2);
+
+	PC1 inst3PC1 (Key, 1, templeft, tempright);
+	PC2 inst3PC2 (templeft, tempright, SubKey3);
+
+	PC1 inst4PC1 (Key, 1, templeft, tempright);
+	PC2 inst4PC2 (templeft, tempright, SubKey4);
+
+	PC1 inst5PC1 (Key, 1, templeft, tempright);
+	PC2 inst5PC2 (templeft, tempright, SubKey5);
+
+	PC1 inst6PC1 (Key, 1, templeft, tempright);
+	PC2 inst6PC2 (templeft, tempright, SubKey6);
+
+	PC1 inst7PC1 (Key, 1, templeft, tempright);
+	PC2 inst7PC2 (templeft, tempright, SubKey7);
+
+	PC1 inst8PC1 (Key, 1, templeft, tempright);
+	PC2 inst8PC2 (templeft, tempright, SubKey8);
+
+	PC1 inst9PC1 (Key, 0, templeft, tempright);
+	PC2 inst9PC2 (templeft, tempright, SubKey9);
+
+	PC1 inst10PC1 (Key, 1, templeft, tempright);
+	PC2 inst10PC2 (templeft, tempright, SubKey10);
+
+	PC1 inst11PC1 (Key, 1, templeft, tempright);
+	PC2 inst11PC2 (templeft, tempright, SubKey11);
+
+	PC1 inst12PC1 (Key, 1, templeft, tempright);
+	PC2 inst12PC2 (templeft, tempright, SubKey12);
+
+	PC1 inst13PC1 (Key, 1, templeft, tempright);
+	PC2 inst13PC2 (templeft, tempright, SubKey13);
+
+	PC1 inst14PC1 (Key, 1, templeft, tempright);
+	PC2 inst14PC2 (templeft, tempright, SubKey14);
+
+	PC1 inst15PC1 (Key, 1, templeft, tempright);
+	PC2 inst15PC2 (templeft, tempright, SubKey15);
+
+	PC1 inst16PC1 (Key, 0, templeft, tempright);
+	PC2 inst16PC2 (templeft, tempright, SubKey16);
+
 endmodule // GenerateKeys
 
-module PC1 (key, left_block, right_block);
+module PC1 (key, iteration, left_block, right_block);
 
    input logic [63:0]  key;
+   input logic iteration; // if iteration is 0, then 1 left shift; if 1, then 2
    output logic [27:0] left_block;
    output logic [27:0] right_block;
 
    logic [55:0]        out_block;
+//    logic [1:0]	temp;
+
+	assign out_block[63] = key[64 - 57];
+	assign out_block[62] = key[64 - 49];
+
+	// // Assgin Left block
+    // assign left_block[27:21] = key[62:56];
+	// assign left_block[20:14] = key[54:48];
+	// assign left_block[13:7] = key[46:40];
+	// assign left_block[6:0] = key[38:32];
+
+	// // Assign right block
+	// assign right_block[27:21] = key[30:24];
+	// assign right_block[20:14] = key[22:16];
+	// assign right_block[13:7] = key[14:8];
+	// assign right_block[6:0] = key[6:0];
+
+	// if (iteration) begin						// Shift left by two for both blocks
+	// 	assign temp[1:0] = left_block[27:26];
+	// 	assign left_block = left_block << 2;
+	// 	assign leftblock[1:0] = temp[1:0];
+
+	// 	assign temp[1:0] = right_block[27:26];
+	// 	assign right_block = right_block << 2;
+	// 	assign right_block[1:0] = temp[1:0];
+	// end else begin								// Shift left by 1 for both blocks
+	// 	assign temp[0] = left_block[27];
+	// 	assign left_block = left_block << 2;
+	// 	assign leftblock[0] = temp[0];
+
+	// 	assign temp[0] = right_block[27];
+	// 	assign right_block = right_block << 2;
+	// 	assign right_block[0] = temp[0];
+	// end
+	
 
 endmodule // PC1
 
@@ -45,6 +132,8 @@ module PC2 (left_block, right_block, subkey);
    input logic [27:0] left_block;
    input logic [27:0] right_block;
    output logic [47:0] subkey;
+   
+   assign subkey = {left_block[27:0], right_block[27:0]};
 
 endmodule // PC2
 
