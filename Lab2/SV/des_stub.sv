@@ -90,10 +90,66 @@ module PC1 (key, iteration, left_block, right_block);
    logic [55:0]        out_block;
 //    logic [1:0]	temp;
 
-	assign out_block[63] = key[64 - 57];
-	assign out_block[62] = key[64 - 49];
+	assign out_block[55] = key[64 - 57];
+	assign out_block[54] = key[64 - 49];
+	assign out_block[53] = key[64 - 41];
+	assign out_block[52] = key[64 - 33];
+	assign out_block[51] = key[64 - 25];
+	assign out_block[50] = key[64 - 17];
+	assign out_block[49] = key[64 - 9];
+	assign out_block[48] = key[64 - 1];
+	assign out_block[47] = key[64 - 58];
+	assign out_block[46] = key[64 - 50];
+	assign out_block[45] = key[64 - 42];
+	assign out_block[44] = key[64 - 34];
+	assign out_block[43] = key[64 - 26];
+	assign out_block[42] = key[64 - 18];
+	assign out_block[41] = key[64 - 10];
+	assign out_block[40] = key[64 - 2];
+	assign out_block[39] = key[64 - 59];
+	assign out_block[38] = key[64 - 51];
+	assign out_block[37] = key[64 - 43];
+	assign out_block[36] = key[64 - 35];
+	assign out_block[35] = key[64 - 27];
+	assign out_block[34] = key[64 - 19];
+	assign out_block[33] = key[64 - 11];
+	assign out_block[32] = key[64 - 3];
+	assign out_block[31] = key[64 - 60];
+	assign out_block[30] = key[64 - 52];
+	assign out_block[29] = key[64 - 44];
+	assign out_block[28] = key[64 - 36];
+	assign out_block[27] = key[64 - 63];
+	assign out_block[26] = key[64 - 55];
+	assign out_block[25] = key[64 - 47];
+	assign out_block[24] = key[64 - 39];
+	assign out_block[23] = key[64 - 31];
+	assign out_block[22] = key[64 - 23];
+	assign out_block[21] = key[64 - 15];
+	assign out_block[20] = key[64 - 7];
+	assign out_block[19] = key[64 - 62];
+	assign out_block[18] = key[64 - 54];
+	assign out_block[17] = key[64 - 46];
+	assign out_block[16] = key[64 - 38];
+	assign out_block[15] = key[64 - 30];
+	assign out_block[14] = key[64 - 22];
+	assign out_block[13] = key[64 - 14];
+	assign out_block[12] = key[64 - 6];
+	assign out_block[11] = key[64 - 61];
+	assign out_block[10] = key[64 - 53];
+	assign out_block[9] = key[64 - 45];
+	assign out_block[8] = key[64 - 37];
+	assign out_block[7] = key[64 - 29];
+	assign out_block[6] = key[64 - 21];
+	assign out_block[5] = key[64 - 13];
+	assign out_block[4] = key[64 - 5];
+	assign out_block[3] = key[64 - 28];
+	assign out_block[2] = key[64 - 20];
+	assign out_block[1] = key[64 - 12];
+	assign out_block[0] = key[64 - 4];
 
-	// // Assgin Left block
+	assign left_block[27:0] = outblock[55:28];
+	assign right_block[27:0] = outblock[27:0];
+	// // Assign Left block
     // assign left_block[27:21] = key[62:56];
 	// assign left_block[20:14] = key[54:48];
 	// assign left_block[13:7] = key[46:40];
@@ -122,10 +178,6 @@ module PC1 (key, iteration, left_block, right_block);
 	// 	assign right_block = right_block << 2;
 	// 	assign right_block[0] = temp[0];
 	// end
-	
-
-   
-
 endmodule // PC1
 
 module PC2 (left_block, right_block, subkey);
