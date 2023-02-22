@@ -35,8 +35,9 @@ module PC1 (key, left_block, right_block);
    input logic [63:0]  key;
    output logic [27:0] left_block;
    output logic [27:0] right_block;
-
    logic [55:0]        out_block;
+
+   
 
 endmodule // PC1
 
