@@ -1215,52 +1215,52 @@ module DES (input logic [63:0] key, input logic [63:0] plaintext,
    // Initial Permutation (IP)
    IP b1 (plaintext, ip_out);
    // round 1
-   tempkey = encrypt ? SubKey1 : SubKey16;
+   assign tempkey = encrypt ? SubKey1 : SubKey16;
    round round1 (ip_out, tempkey, r1_out);
    // round 2
-   tempkey = encrypt ? SubKey2 : SubKey15;
+   assign tempkey = encrypt ? SubKey2 : SubKey15;
    round round2 (r1_out, tempkey, r2_out);
    // round 3
-   tempkey = encrypt ? SubKey3 : SubKey14;
+   assign tempkey = encrypt ? SubKey3 : SubKey14;
    round round3 (r2_out, tempkey, r3_out);
    // round 4
-   tempkey = encrypt ? SubKey4 : SubKey13;
+   assign tempkey = encrypt ? SubKey4 : SubKey13;
    round round4 (r3_out, tempkey, r4_out);
    // round 5
-   tempkey = encrypt ? SubKey5 : SubKey12;
+   assign tempkey = encrypt ? SubKey5 : SubKey12;
    round round5 (r4_out, tempkey, r5_out);
    // round 6
-   tempkey = encrypt ? SubKey6 : SubKey11;
+   assign tempkey = encrypt ? SubKey6 : SubKey11;
    round round6 (r5_out, tempkey, r6_out);
    // round 7
-   tempkey = encrypt ? SubKey7 : SubKey10;
+   assign tempkey = encrypt ? SubKey7 : SubKey10;
    round round7 (r6_out, tempkey, r7_out);
    // round 8
-   tempkey = encrypt ? SubKey8 : SubKey9;
+   assign tempkey = encrypt ? SubKey8 : SubKey9;
    round round8 (r7_out, tempkey, r8_out);
    // round 9
-   tempkey = encrypt ? SubKey9 : SubKey8;
+   assign tempkey = encrypt ? SubKey9 : SubKey8;
    round round9 (r8_out, tempkey, r9_out);
    // round 10
-   tempkey = encrypt ? SubKey10 : SubKey7;
+   assign tempkey = encrypt ? SubKey10 : SubKey7;
    round round10 (r9_out, tempkey, r10_out);
    // round 11
-   tempkey = encrypt ? SubKey11 : SubKey6;
+   assign tempkey = encrypt ? SubKey11 : SubKey6;
    round round11 (r10_out, tempkey, r11_out);
    // round 12
-   tempkey = encrypt ? SubKey12 : SubKey5;
+   assign tempkey = encrypt ? SubKey12 : SubKey5;
    round round12 (r11_out, tempkey, r12_out);
    // round 13
-   tempkey = encrypt ? SubKey13 : SubKey4;
+   assign tempkey = encrypt ? SubKey13 : SubKey4;
    round round13 (r12_out, tempkey, r13_out);
    // round 14
-   tempkey = encrypt ? SubKey14 : SubKey3;
+   assign tempkey = encrypt ? SubKey14 : SubKey3;
    round round14 (r13_out, tempkey, r14_out);
    // round 15
-   tempkey = encrypt ? SubKey15 : SubKey2;
+   assign tempkey = encrypt ? SubKey15 : SubKey2;
    round round15 (r14_out, tempkey, r15_out);
    // round 16
-   tempkey = encrypt ? SubKey16 : SubKey1;
+   assign tempkey = encrypt ? SubKey16 : SubKey1;
 	round round16 (r15_out, tempkey, r16_out);	
    // Final Permutation (IP^{-1}) (swap output of round16)
    FP FP({r16_out[31:0], r16_out[63:32]}, ciphertext);
