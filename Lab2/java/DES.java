@@ -121,7 +121,7 @@ class DES {
             String output = "";
             input = hextoBin(input);
             for (int i = 0; i < sequence.length; i++)
-                output += input.charAt(sequence[i] - 1);
+                output += input.charAt(sequence[i] - 1);    //Changed from sequence[i] - 1
             output = binToHex(output);
             return output;
         }
@@ -292,8 +292,8 @@ class DES {
 	//String plaintext = "123456abcd132536";
 	//String key = "133457799bbcdff1";	
 	// Example 2
-	String plaintext = "2579db866c0f528c";
-	String key = "433e4529462a4a62";
+	String plaintext = "f12ed07e0a366b9f";
+	String key = "f431a7fea1c87907";
 	// Example 3
 	//String plaintext = "ed7bc587a26f8c67";
 	//String key = "3b3898371520f75e";

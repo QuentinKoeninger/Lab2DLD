@@ -25,7 +25,7 @@ module stimulus;
    initial 
      begin	
 	clk = 1'b1;
-	forever #5 clk = ~clk;
+	forever #3 clk = ~clk;
      end
 
    initial
@@ -54,7 +54,7 @@ module stimulus;
        $fdisplay(desc3, "%h %h %b || %h || %h %b", 
 		 plaintext, key, encrypt, ciphertext, result, (result == ciphertext));
        vectornum = vectornum + 1;
-       if (testvectors[vectornum] === 200'bx) 
+       if (testvectors[vectornum] == 200'bx) 
 	 begin 
 	    $display("%d tests completed with %d errors", 
 		     vectornum, errors);

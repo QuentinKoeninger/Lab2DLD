@@ -28,81 +28,135 @@ module GenerateKeys (Key, SubKey1, SubKey2, SubKey3, SubKey4,
    output logic [47:0] SubKey15;
    output logic [47:0] SubKey16;
 
-   logic [27:0] templeft;
-   logic [27:0] tempright;
+   logic [27:0] templeft1;
+   logic [27:0] tempright1;
 
-	PC1 instPC1 (Key, templeft, tempright);
-	leftShift left1 (0, templeft, tempright, templeft, tempright);
+   logic [27:0] templeft2;
+   logic [27:0] tempright2;
 
-	PC2 inst1PC2 (templeft, tempright, SubKey1);
-	leftShift left2 (0, templeft, tempright, templeft, tempright);
+   logic [27:0] templeft3;
+   logic [27:0] tempright3;
 
-	PC2 inst2PC2 (templeft, tempright, SubKey1);
-	leftShift left3 (1, templeft, tempright, templeft, tempright);
+   logic [27:0] templeft4;
+   logic [27:0] tempright4;
 
-	PC2 inst3PC2 (templeft, tempright, SubKey1);
-	leftShift left4 (1, templeft, tempright, templeft, tempright);
+   logic [27:0] templeft5;
+   logic [27:0] tempright5;
 
-	PC2 inst4PC2 (templeft, tempright, SubKey1);
-	leftShift left5 (1, templeft, tempright, templeft, tempright);
+   logic [27:0] templeft6;
+   logic [27:0] tempright6;
 
-	PC2 inst5PC2 (templeft, tempright, SubKey1);
-	leftShift left6 (1, templeft, tempright, templeft, tempright);
+   logic [27:0] templeft7;
+   logic [27:0] tempright7;
 
-	PC2 inst6PC2 (templeft, tempright, SubKey1);
-	leftShift left7 (1, templeft, tempright, templeft, tempright);
+   logic [27:0] templeft8;
+   logic [27:0] tempright8;
 
-	PC2 inst7PC2 (templeft, tempright, SubKey1);
-	leftShift left8 (1, templeft, tempright, templeft, tempright);
+   logic [27:0] templeft9;
+   logic [27:0] tempright9;
 
-	PC2 inst8PC2 (templeft, tempright, SubKey1);
-	leftShift left9 (0, templeft, tempright, templeft, tempright);
+   logic [27:0] templeft10;
+   logic [27:0] tempright10;
 
-	PC2 inst9PC2 (templeft, tempright, SubKey1);
-	leftShift left10 (1, templeft, tempright, templeft, tempright);
+   logic [27:0] templeft11;
+   logic [27:0] tempright11;
 
-	PC2 inst10PC2 (templeft, tempright, SubKey1);
-	leftShift left11 (1, templeft, tempright, templeft, tempright);
+   logic [27:0] templeft12;
+   logic [27:0] tempright12;
 
-	PC2 inst11PC2 (templeft, tempright, SubKey1);
-	leftShift left12 (1, templeft, tempright, templeft, tempright);
+   logic [27:0] templeft13;
+   logic [27:0] tempright13;
 
-	PC2 inst12PC2 (templeft, tempright, SubKey1);
-	leftShift left13 (1, templeft, tempright, templeft, tempright);
+   logic [27:0] templeft14;
+   logic [27:0] tempright14;
 
-	PC2 inst13PC2 (templeft, tempright, SubKey1);
-	leftShift left14 (1, templeft, tempright, templeft, tempright);
+   logic [27:0] templeft15;
+   logic [27:0] tempright15;
 
-	PC2 inst13PC2 (templeft, tempright, SubKey1);
-	leftShift left15 (1, templeft, tempright, templeft, tempright);
+   logic [27:0] templeft16;
+   logic [27:0] tempright16;
 
-	PC2 inst15PC2 (templeft, tempright, SubKey1);
-	leftShift left16 (0, templeft, tempright, templeft, tempright);
+   logic [27:0] templeft17;
+   logic [27:0] tempright17;
 
-	PC2 inst16PC2 (templeft, tempright, SubKey1);
+	PC1 instPC1 (Key, templeft1, tempright1);
+	leftShift1 left1 (templeft1, tempright1, templeft2, tempright2);
+
+	PC2 inst1PC2 (templeft2, tempright2, SubKey1);
+	leftShift1 left2 (templeft2, tempright2, templeft3, tempright3);
+
+	PC2 inst2PC2 (templeft3, tempright3, SubKey2);
+	leftShift2 left3 (templeft3, tempright3, templeft4, tempright4);
+
+	PC2 inst3PC2 (templeft4, tempright4, SubKey3);
+	leftShift2 left4 (templeft4, tempright4, templeft5, tempright5);
+
+	PC2 inst4PC2 (templeft5, tempright5, SubKey4);
+	leftShift2 left5 (templeft5, tempright5, templeft6, tempright6);
+
+	PC2 inst5PC2 (templeft6, tempright6, SubKey5);
+	leftShift2 left6 (templeft6, tempright6, templeft7, tempright7);
+
+	PC2 inst6PC2 (templeft7, tempright7, SubKey6);
+	leftShift2 left7 (templeft7, tempright7, templeft8, tempright8);
+
+	PC2 inst7PC2 (templeft8, tempright8, SubKey7);
+	leftShift2 left8 (templeft8, tempright8, templeft9, tempright9);
+
+	PC2 inst8PC2 (templeft9, tempright9, SubKey8);
+	leftShift1 left9 (templeft9, tempright9, templeft10, tempright10);
+
+	PC2 inst9PC2 (templeft10, tempright10, SubKey9);
+	leftShift2 left10 (templeft10, tempright10, templeft11, tempright11);
+
+	PC2 inst10PC2 (templeft11, tempright11, SubKey10);
+	leftShift2 left11 (templeft11, tempright11, templeft12, tempright12);
+
+	PC2 inst11PC2 (templeft12, tempright12, SubKey11);
+	leftShift2 left12 (templeft12, tempright12, templeft13, tempright13);
+
+	PC2 inst12PC2 (templeft13, tempright13, SubKey12);
+	leftShift2 left13 (templeft13, tempright13, templeft14, tempright14);
+
+	PC2 inst13PC2 (templeft14, tempright14, SubKey13);
+	leftShift2 left14 (templeft14, tempright14, templeft15, tempright15);
+
+	PC2 inst14PC2 (templeft15, tempright15, SubKey14);
+	leftShift2 left15 (templeft15, tempright15, templeft16, tempright16);
+
+	PC2 inst15PC2 (templeft16, tempright16, SubKey15);
+	leftShift1 left16 (templeft16, tempright16, templeft17, tempright17);
+
+	PC2 inst16PC2 (templeft17, tempright17, SubKey16);
 
 	
 	
 
 endmodule // GenerateKeys
 
-module leftShift[iteration, left_block, right_block, out_left, out_right];
+module leftShift2(left_block, right_block, out_left, out_right);
 
-	input logic iteration;
-	input logic left_block[27:0];
-	input logic right_block[27:0];
-	output logic out_left[27:0];
-	output logic out_right[27:0];
+	input logic [27:0]left_block;
+	input logic [27:0]right_block;
+	output logic [27:0]out_left;
+	output logic [27:0]out_right;
 
-	if (iteration) begin
-		out_left = {left_block[1:0], left_block[27:2]};
-		out_right ={right_block[1:0], right_block[27:2]};
-	end else begin
-		out_left = {left_block[0], left_block[27:1]};
-		out_right ={right_block[0], right_block[27:1]};
-	end
+	assign out_left = {left_block[1:0], left_block[27:2]};
+	assign out_right ={right_block[1:0], right_block[27:2]};
+		
+endmodule // shift the bits (2) to the left
 
-endmodule // shift the bits (iteration) to the left
+module leftShift1(left_block, right_block, out_left, out_right);
+
+	input logic [27:0]left_block;
+	input logic [27:0]right_block;
+	output logic [27:0]out_left;
+	output logic [27:0]out_right;
+			
+	assign out_left = {left_block[0], left_block[27:1]};
+	assign out_right ={right_block[0], right_block[27:1]};
+
+endmodule // shift the bits (1) to the left
 
 module PC1 (key, left_block, right_block);
 
@@ -169,8 +223,8 @@ module PC1 (key, left_block, right_block);
 	assign out_block[1] = key[64 - 12];
 	assign out_block[0] = key[64 - 4];
 
-	assign left_block[27:0] = outblock[55:28];
-	assign right_block[27:0] = outblock[27:0];
+	assign left_block[27:0] = out_block[55:28];
+	assign right_block[27:0] = out_block[27:0];
 	// // Assign Left block
     // assign left_block[27:21] = key[62:56];
 	// assign left_block[20:14] = key[54:48];
@@ -298,7 +352,7 @@ module SF (inp_block, out_block);
 	assign out_block[4] = inp_block[32 - 6];
 	assign out_block[3] = inp_block[32 - 22];
 	assign out_block[2] = inp_block[32 - 11];
-	assign out_block[1] = inp_block[32 - 3];
+	assign out_block[1] = inp_block[32 - 4];
 	assign out_block[0] = inp_block[32 - 25];
 
 endmodule // SF
@@ -370,9 +424,9 @@ module feistel (inp_block, subkey, out_block);
    logic [47:0] xor_out;
    logic [31:0] sboxresults;
 
-   EF instEF (inp_block, temp_block);
+   EF instEF (inp_block[31:0], temp_block[47:0]);
 
-   assign xor_out = temp_block ^ subkey;
+   assign xor_out[47:0] = temp_block[47:0] ^ subkey[47:0];
 
 	S1_Box instS1 (xor_out[47:42], sboxresults[31:28]);
 	S2_Box instS2 (xor_out[41:36], sboxresults[27:24]);
@@ -381,9 +435,9 @@ module feistel (inp_block, subkey, out_block);
 	S5_Box instS5 (xor_out[23:18], sboxresults[15:12]);
 	S6_Box instS6 (xor_out[17:12], sboxresults[11:8]);
 	S7_Box instS7 (xor_out[11:6], sboxresults[7:4]);
-	S1_Box instS1 (xor_out[5:0], sboxresults[3:0]);
+	S1_Box instS8 (xor_out[5:0], sboxresults[3:0]);
 
-	SF instSF (sboxresults, out_block);
+	SF instSF (sboxresults[31:0], out_block[31:0]);
 
 endmodule // Feistel
 
@@ -403,8 +457,8 @@ module round (inp_block, subkey, out_block);
 
    feistel instfeistel (inp_right, subkey, fei_out);
 
-	assign out_block[31:0] = fei_out ^ inp_left;
-	assign out_block[63:32] = inp_right;
+	assign out_block[31:0] = fei_out[31:0] ^ inp_left[31:0];
+	assign out_block[63:32] = inp_right[31:0];
 
 endmodule // round1
 
@@ -1187,23 +1241,38 @@ module DES (input logic [63:0] key, input logic [63:0] plaintext,
    logic [47:0] 	SubKey13, SubKey14, SubKey15, SubKey16;
 
    logic [63:0] 	ip_out;
-   logic [63:0] 	r1_out = 64'h0; 
-   logic [63:0] 	r2_out = 64'h0; 
-   logic [63:0] 	r3_out = 64'h0; 
-   logic [63:0] 	r4_out = 64'h0; 
-   logic [63:0] 	r5_out = 64'h0; 
-   logic [63:0] 	r6_out = 64'h0; 
-   logic [63:0] 	r7_out = 64'h0; 
-   logic [63:0] 	r8_out = 64'h0; 
-   logic [63:0] 	r9_out = 64'h0; 
-   logic [63:0] 	r10_out = 64'h0; 
-   logic [63:0] 	r11_out = 64'h0; 
-   logic [63:0] 	r12_out = 64'h0; 
-   logic [63:0] 	r13_out = 64'h0; 
-   logic [63:0] 	r14_out = 64'h0;    
-   logic [63:0] 	r15_out = 64'h0; 
-   logic [63:0] 	r16_out = 64'h0; 
-   logic [63:0]	tempkey;  
+   logic [63:0] 	r1_out; 
+   logic [63:0] 	r2_out; 
+   logic [63:0] 	r3_out; 
+   logic [63:0] 	r4_out; 
+   logic [63:0] 	r5_out; 
+   logic [63:0] 	r6_out; 
+   logic [63:0] 	r7_out; 
+   logic [63:0] 	r8_out; 
+   logic [63:0] 	r9_out; 
+   logic [63:0] 	r10_out; 
+   logic [63:0] 	r11_out; 
+   logic [63:0] 	r12_out; 
+   logic [63:0] 	r13_out; 
+   logic [63:0] 	r14_out;    
+   logic [63:0] 	r15_out; 
+   logic [63:0] 	r16_out; 
+   logic [47:0]	tempkey1;
+   logic [47:0]	tempkey2;  
+   logic [47:0]	tempkey3;  
+   logic [47:0]	tempkey4;  
+   logic [47:0]	tempkey5;  
+   logic [47:0]	tempkey6;  
+   logic [47:0]	tempkey7;  
+   logic [47:0]	tempkey8;  
+   logic [47:0]	tempkey9;  
+   logic [47:0]	tempkey10;  
+   logic [47:0]	tempkey11;  
+   logic [47:0]	tempkey12;  
+   logic [47:0]	tempkey13;  
+   logic [47:0]	tempkey14;  
+   logic [47:0]	tempkey15;  
+   logic [47:0]	tempkey16;    
    
    // SubKey generation
    GenerateKeys k1 (key, SubKey1, SubKey2, SubKey3, SubKey4,
@@ -1215,53 +1284,53 @@ module DES (input logic [63:0] key, input logic [63:0] plaintext,
    // Initial Permutation (IP)
    IP b1 (plaintext, ip_out);
    // round 1
-   assign tempkey = encrypt ? SubKey1 : SubKey16;
-   round round1 (ip_out, tempkey, r1_out);
+   assign tempkey1 = encrypt ? SubKey1 : SubKey16;
+   round round1 (ip_out, tempkey1, r1_out);
    // round 2
-   assign tempkey = encrypt ? SubKey2 : SubKey15;
-   round round2 (r1_out, tempkey, r2_out);
+   assign tempkey2 = encrypt ? SubKey2 : SubKey15;
+   round round2 (r1_out, tempkey2, r2_out);
    // round 3
-   assign tempkey = encrypt ? SubKey3 : SubKey14;
-   round round3 (r2_out, tempkey, r3_out);
+   assign tempkey3 = encrypt ? SubKey3 : SubKey14;
+   round round3 (r2_out, tempkey3, r3_out);
    // round 4
-   assign tempkey = encrypt ? SubKey4 : SubKey13;
-   round round4 (r3_out, tempkey, r4_out);
+   assign tempkey4 = encrypt ? SubKey4 : SubKey13;
+   round round4 (r3_out, tempkey4, r4_out);
    // round 5
-   assign tempkey = encrypt ? SubKey5 : SubKey12;
-   round round5 (r4_out, tempkey, r5_out);
+   assign tempkey5 = encrypt ? SubKey5 : SubKey12;
+   round round5 (r4_out, tempkey5, r5_out);
    // round 6
-   assign tempkey = encrypt ? SubKey6 : SubKey11;
-   round round6 (r5_out, tempkey, r6_out);
+   assign tempkey6 = encrypt ? SubKey6 : SubKey11;
+   round round6 (r5_out, tempkey6, r6_out);
    // round 7
-   assign tempkey = encrypt ? SubKey7 : SubKey10;
-   round round7 (r6_out, tempkey, r7_out);
+   assign tempkey7 = encrypt ? SubKey7 : SubKey10;
+   round round7 (r6_out, tempkey7, r7_out);
    // round 8
-   assign tempkey = encrypt ? SubKey8 : SubKey9;
-   round round8 (r7_out, tempkey, r8_out);
+   assign tempkey8 = encrypt ? SubKey8 : SubKey9;
+   round round8 (r7_out, tempkey8, r8_out);
    // round 9
-   assign tempkey = encrypt ? SubKey9 : SubKey8;
-   round round9 (r8_out, tempkey, r9_out);
+   assign tempkey9 = encrypt ? SubKey9 : SubKey8;
+   round round9 (r8_out, tempkey9, r9_out);
    // round 10
-   assign tempkey = encrypt ? SubKey10 : SubKey7;
-   round round10 (r9_out, tempkey, r10_out);
+   assign tempkey10 = encrypt ? SubKey10 : SubKey7;
+   round round10 (r9_out, tempkey10, r10_out);
    // round 11
-   assign tempkey = encrypt ? SubKey11 : SubKey6;
-   round round11 (r10_out, tempkey, r11_out);
+   assign tempkey11 = encrypt ? SubKey11 : SubKey6;
+   round round11 (r10_out, tempkey11, r11_out);
    // round 12
-   assign tempkey = encrypt ? SubKey12 : SubKey5;
-   round round12 (r11_out, tempkey, r12_out);
+   assign tempkey12 = encrypt ? SubKey12 : SubKey5;
+   round round12 (r11_out, tempkey12, r12_out);
    // round 13
-   assign tempkey = encrypt ? SubKey13 : SubKey4;
-   round round13 (r12_out, tempkey, r13_out);
+   assign tempkey13 = encrypt ? SubKey13 : SubKey4;
+   round round13 (r12_out, tempkey13, r13_out);
    // round 14
-   assign tempkey = encrypt ? SubKey14 : SubKey3;
-   round round14 (r13_out, tempkey, r14_out);
+   assign tempkey14 = encrypt ? SubKey14 : SubKey3;
+   round round14 (r13_out, tempkey14, r14_out);
    // round 15
-   assign tempkey = encrypt ? SubKey15 : SubKey2;
-   round round15 (r14_out, tempkey, r15_out);
+   assign tempkey15 = encrypt ? SubKey15 : SubKey2;
+   round round15 (r14_out, tempkey15, r15_out);
    // round 16
-   assign tempkey = encrypt ? SubKey16 : SubKey1;
-	round round16 (r15_out, tempkey, r16_out);	
+   assign tempkey16 = encrypt ? SubKey16 : SubKey1;
+	round round16 (r15_out, tempkey16, r16_out);	
    // Final Permutation (IP^{-1}) (swap output of round16)
    FP FP({r16_out[31:0], r16_out[63:32]}, ciphertext);
    
