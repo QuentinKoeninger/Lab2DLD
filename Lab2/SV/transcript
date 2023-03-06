@@ -13,7 +13,7 @@
 # //
 # do des.do
 # Model Technology ModelSim SE-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
-# Start time: 17:43:07 on Mar 05,2023
+# Start time: 20:08:56 on Mar 05,2023
 # vlog -reportprogress 300 des_stub.sv tb_des.sv 
 # -- Compiling module GenerateKeys
 # -- Compiling module leftShift2
@@ -38,12 +38,11 @@
 # -- Compiling module stimulus
 # 
 # Top level modules:
-# 	S8_Box
 # 	stimulus
-# End time: 17:43:07 on Mar 05,2023, Elapsed time: 0:00:00
+# End time: 20:08:56 on Mar 05,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -voptargs="+acc" work.stimulus 
-# Start time: 17:43:07 on Mar 05,2023
+# Start time: 20:08:56 on Mar 05,2023
 # ** Note: (vsim-3812) Design is being optimized...
 # Loading sv_std.std
 # Loading work.stimulus(fast)
@@ -64,8 +63,9 @@
 # Loading work.S5_Box(fast)
 # Loading work.S6_Box(fast)
 # Loading work.S7_Box(fast)
+# Loading work.S8_Box(fast)
 # Loading work.SF(fast)
 # Loading work.FP(fast)
 # .main_pane.wave.interior.cs.body.pw.wf
-# End time: 17:43:12 on Mar 05,2023, Elapsed time: 0:00:05
+# End time: 20:10:18 on Mar 05,2023, Elapsed time: 0:01:22
 # Errors: 0, Warnings: 0

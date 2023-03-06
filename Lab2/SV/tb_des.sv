@@ -25,7 +25,7 @@ module stimulus;
    initial 
      begin	
 	clk = 1'b1;
-	forever #3 clk = ~clk;
+	forever #1 clk = ~clk;
      end
 
    initial

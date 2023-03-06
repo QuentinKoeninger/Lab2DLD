@@ -129,6 +129,26 @@ module GenerateKeys (Key, SubKey1, SubKey2, SubKey3, SubKey4,
 
 	PC2 inst16PC2 (templeft17, tempright17, SubKey16);
 
+	// initial begin
+	// $display ("0: %h", Key);
+	// $display ("1: %h", SubKey1);
+	// $display ("2: %h", SubKey2);
+	// $display ("3: %h", SubKey3);
+	// $display ("4: %h", SubKey4);
+	// $display ("5: %h", SubKey5);
+	// $display ("6: %h", SubKey6);
+	// $display ("7: %h", SubKey7);
+	// $display ("8: %h", SubKey8);
+	// $display ("9: %h", SubKey9);
+	// $display ("10: %h", SubKey10);
+	// $display ("11: %h", SubKey11);
+	// $display ("12: %h", SubKey12);
+	// $display ("13: %h", SubKey13);
+	// $display ("14: %h", SubKey14);
+	// $display ("15: %h", SubKey15);
+	// $display ("16: %h", SubKey16);
+	// end
+
 	
 	
 
@@ -141,8 +161,8 @@ module leftShift2(left_block, right_block, out_left, out_right);
 	output logic [27:0]out_left;
 	output logic [27:0]out_right;
 
-	assign out_left = {left_block[1:0], left_block[27:2]};
-	assign out_right ={right_block[1:0], right_block[27:2]};
+	assign out_left = {left_block[25:0], left_block[27:26]};
+	assign out_right ={right_block[25:0], right_block[27:26]};
 		
 endmodule // shift the bits (2) to the left
 
@@ -153,8 +173,8 @@ module leftShift1(left_block, right_block, out_left, out_right);
 	output logic [27:0]out_left;
 	output logic [27:0]out_right;
 			
-	assign out_left = {left_block[0], left_block[27:1]};
-	assign out_right ={right_block[0], right_block[27:1]};
+	assign out_left = {left_block[26:0], left_block[27]};
+	assign out_right ={right_block[26:0], right_block[27]};
 
 endmodule // shift the bits (1) to the left
 
@@ -164,7 +184,7 @@ module PC1 (key, left_block, right_block);
    output logic [27:0] left_block;
    output logic [27:0] right_block;
    logic [55:0]        out_block;
-//    logic [1:0]	temp;
+//    logic [1:0]	temp
 
 	assign out_block[55] = key[64 - 57];
 	assign out_block[54] = key[64 - 49];
@@ -435,7 +455,7 @@ module feistel (inp_block, subkey, out_block);
 	S5_Box instS5 (xor_out[23:18], sboxresults[15:12]);
 	S6_Box instS6 (xor_out[17:12], sboxresults[11:8]);
 	S7_Box instS7 (xor_out[11:6], sboxresults[7:4]);
-	S1_Box instS8 (xor_out[5:0], sboxresults[3:0]);
+	S8_Box instS8 (xor_out[5:0], sboxresults[3:0]);
 
 	SF instSF (sboxresults[31:0], out_block[31:0]);
 
@@ -1279,6 +1299,25 @@ module DES (input logic [63:0] key, input logic [63:0] plaintext,
 		    SubKey5, SubKey6, SubKey7, SubKey8,
 		    SubKey9, SubKey10, SubKey11, SubKey12,
 		    SubKey13, SubKey14, SubKey15, SubKey16);
+
+	// initial begin
+	// $display ("1: %h", SubKey1);
+	// $display ("2: %h", SubKey2);
+	// $display ("3: %h", SubKey3);
+	// $display ("4: %h", SubKey4);
+	// $display ("5: %h", SubKey5);
+	// $display ("6: %h", SubKey6);
+	// $display ("7: %h", SubKey7);
+	// $display ("8: %h", SubKey8);
+	// $display ("9: %h", SubKey9);
+	// $display ("10: %h", SubKey10);
+	// $display ("11: %h", SubKey11);
+	// $display ("12: %h", SubKey12);
+	// $display ("13: %h", SubKey13);
+	// $display ("14: %h", SubKey14);
+	// $display ("15: %h", SubKey15);
+	// $display ("16: %h", SubKey16);
+	// end
    // encrypt (encrypt=1) or decrypt (encrypt=0) xxxxxxxxxxxxxxxxx
 
    // Initial Permutation (IP)
