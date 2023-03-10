@@ -94,7 +94,7 @@ always@(posedge sysclk_125mhz)
         default: led[0] = 'b0;
     endcase
     
-    if (^key[63:57] == key[56] && ^key[55:49] == key[48] && ^key[47:41] == key[40] && ^key[39:33] == key[32] && ^key[31:25] == key[24] && ^key[23:17] == key[24] && ^key[15:1]==key[0])led[1] = 1'b1;
+    if (~(^key[63:57] == key[56] && ^key[55:49] == key[48] && ^key[47:41] == key[40] && ^key[39:33] == key[32] && ^key[31:25] == key[24] && ^key[23:17] == key[16] && ^key[15:1]==key[0]))led[1] = 1'b1;
     else led[1] = 1'b0;
   
     if (sw[0]) begin
