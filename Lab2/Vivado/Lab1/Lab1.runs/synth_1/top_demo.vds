@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Wed Mar  8 18:27:12 2023
-# Process ID: 29304
+# Start of session at: Wed Mar 22 15:00:13 2023
+# Process ID: 24784
 # Current directory: C:/Users/qkoenin/Desktop/Lab2DLD/Lab2/Vivado/Lab1/Lab1.runs/synth_1
 # Command line: vivado.exe -log top_demo.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_demo.tcl
 # Log file: C:/Users/qkoenin/Desktop/Lab2DLD/Lab2/Vivado/Lab1/Lab1.runs/synth_1/top_demo.vds
@@ -17,9 +17,9 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 20148
+INFO: [Synth 8-7075] Helper process launched with PID 47080
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1164.781 ; gain = 54.414
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1165.523 ; gain = 24.156
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'top_demo' [C:/Users/qkoenin/Desktop/Lab2DLD/Lab2/Vivado/Lab1/Lab1.srcs/sources_1/new/top_demo.sv:28]
 INFO: [Synth 8-6157] synthesizing module 'DES' [C:/Users/qkoenin/Desktop/Lab2DLD/Lab2/SV/des_stub.sv:1255]
@@ -82,18 +82,18 @@ INFO: [Synth 8-6155] done synthesizing module 'digit2segments' (21#1) [C:/Users/
 INFO: [Synth 8-6155] done synthesizing module 'segment_driver' (22#1) [C:/Users/qkoenin/Desktop/Lab2DLD/Lab2/Vivado/Lab1/Lab1.srcs/sources_1/imports/vivado/segment_driver.sv:23]
 INFO: [Synth 8-6155] done synthesizing module 'top_demo' (23#1) [C:/Users/qkoenin/Desktop/Lab2DLD/Lab2/Vivado/Lab1/Lab1.srcs/sources_1/new/top_demo.sv:28]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1221.996 ; gain = 111.629
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1222.223 ; gain = 80.855
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1221.996 ; gain = 111.629
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1222.223 ; gain = 80.855
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1221.996 ; gain = 111.629
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1222.223 ; gain = 80.855
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.132 . Memory (MB): peak = 1221.996 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.163 . Memory (MB): peak = 1222.223 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -104,26 +104,26 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_demo_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1352.129 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1347.016 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1352.129 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1347.016 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1352.129 ; gain = 241.762
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1347.016 ; gain = 205.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1352.129 ; gain = 241.762
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1347.016 ; gain = 205.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1352.129 ; gain = 241.762
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1347.016 ; gain = 205.648
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'CURRENT_STATE_reg' in module 'segment_driver'
 ---------------------------------------------------------------------------------------------------
@@ -136,7 +136,7 @@ INFO: [Synth 8-802] inferred FSM for state register 'CURRENT_STATE_reg' in modul
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'CURRENT_STATE_reg' using encoding 'sequential' in module 'segment_driver'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1352.129 ; gain = 241.762
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1347.016 ; gain = 205.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -176,7 +176,7 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1352.129 ; gain = 241.762
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 1347.016 ; gain = 205.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -195,14 +195,15 @@ ROM: Preliminary Mapping	Report
 |S7_Box      | out_bits                    | 64x4          | LUT            | 
 |S8_Box      | out_bits                    | 64x4          | LUT            | 
 |round       | instfeistel/instS7/out_bits | 64x4          | LUT            | 
-|round       | instfeistel/instS1/out_bits | 64x4          | LUT            | 
 |round       | instfeistel/instS3/out_bits | 64x4          | LUT            | 
+|round       | instfeistel/instS6/out_bits | 64x4          | LUT            | 
+|round       | instfeistel/instS2/out_bits | 64x4          | LUT            | 
+|round       | instfeistel/instS8/out_bits | 64x4          | LUT            | 
+|round       | instfeistel/instS4/out_bits | 64x4          | LUT            | 
 |round       | instfeistel/instS2/out_bits | 64x4          | LUT            | 
 |round       | instfeistel/instS5/out_bits | 64x4          | LUT            | 
 |round       | instfeistel/instS7/out_bits | 64x4          | LUT            | 
-|round       | instfeistel/instS1/out_bits | 64x4          | LUT            | 
-|round       | instfeistel/instS6/out_bits | 64x4          | LUT            | 
-|round       | instfeistel/instS4/out_bits | 64x4          | LUT            | 
+|round       | instfeistel/instS3/out_bits | 64x4          | LUT            | 
 |round       | instfeistel/instS5/out_bits | 64x4          | LUT            | 
 |round       | instfeistel/instS7/out_bits | 64x4          | LUT            | 
 |round       | instfeistel/instS1/out_bits | 64x4          | LUT            | 
@@ -213,14 +214,14 @@ ROM: Preliminary Mapping	Report
 |round       | instfeistel/instS4/out_bits | 64x4          | LUT            | 
 |round       | instfeistel/instS5/out_bits | 64x4          | LUT            | 
 |round       | instfeistel/instS1/out_bits | 64x4          | LUT            | 
-|round       | instfeistel/instS6/out_bits | 64x4          | LUT            | 
 |round       | instfeistel/instS2/out_bits | 64x4          | LUT            | 
+|round       | instfeistel/instS8/out_bits | 64x4          | LUT            | 
 |round       | instfeistel/instS4/out_bits | 64x4          | LUT            | 
 |round       | instfeistel/instS5/out_bits | 64x4          | LUT            | 
-|round       | instfeistel/instS7/out_bits | 64x4          | LUT            | 
-|round       | instfeistel/instS6/out_bits | 64x4          | LUT            | 
 |round       | instfeistel/instS2/out_bits | 64x4          | LUT            | 
+|round       | instfeistel/instS8/out_bits | 64x4          | LUT            | 
 |round       | instfeistel/instS4/out_bits | 64x4          | LUT            | 
+|round       | instfeistel/instS7/out_bits | 64x4          | LUT            | 
 |round       | instfeistel/instS5/out_bits | 64x4          | LUT            | 
 |round       | instfeistel/instS7/out_bits | 64x4          | LUT            | 
 |round       | instfeistel/instS1/out_bits | 64x4          | LUT            | 
@@ -228,61 +229,30 @@ ROM: Preliminary Mapping	Report
 |round       | instfeistel/instS6/out_bits | 64x4          | LUT            | 
 |round       | instfeistel/instS2/out_bits | 64x4          | LUT            | 
 |round       | instfeistel/instS8/out_bits | 64x4          | LUT            | 
-|round       | instfeistel/instS4/out_bits | 64x4          | LUT            | 
-|round       | instfeistel/instS4/out_bits | 64x4          | LUT            | 
 |round       | instfeistel/instS7/out_bits | 64x4          | LUT            | 
-|round       | instfeistel/instS1/out_bits | 64x4          | LUT            | 
-|round       | instfeistel/instS3/out_bits | 64x4          | LUT            | 
-|round       | instfeistel/instS6/out_bits | 64x4          | LUT            | 
-|round       | instfeistel/instS2/out_bits | 64x4          | LUT            | 
 |round       | instfeistel/instS8/out_bits | 64x4          | LUT            | 
 |round       | instfeistel/instS4/out_bits | 64x4          | LUT            | 
-|round       | instfeistel/instS5/out_bits | 64x4          | LUT            | 
-|round       | instfeistel/instS7/out_bits | 64x4          | LUT            | 
 |round       | instfeistel/instS1/out_bits | 64x4          | LUT            | 
+|round       | instfeistel/instS3/out_bits | 64x4          | LUT            | 
 |round       | instfeistel/instS6/out_bits | 64x4          | LUT            | 
 |round       | instfeistel/instS8/out_bits | 64x4          | LUT            | 
 |round       | instfeistel/instS5/out_bits | 64x4          | LUT            | 
 |round       | instfeistel/instS7/out_bits | 64x4          | LUT            | 
-|round       | instfeistel/instS3/out_bits | 64x4          | LUT            | 
-|round       | instfeistel/instS6/out_bits | 64x4          | LUT            | 
-|round       | instfeistel/instS4/out_bits | 64x4          | LUT            | 
-|round       | instfeistel/instS5/out_bits | 64x4          | LUT            | 
-|round       | instfeistel/instS7/out_bits | 64x4          | LUT            | 
-|round       | instfeistel/instS4/out_bits | 64x4          | LUT            | 
-|round       | instfeistel/instS3/out_bits | 64x4          | LUT            | 
-|round       | instfeistel/instS4/out_bits | 64x4          | LUT            | 
-|round       | instfeistel/instS5/out_bits | 64x4          | LUT            | 
-|round       | instfeistel/instS7/out_bits | 64x4          | LUT            | 
-|round       | instfeistel/instS1/out_bits | 64x4          | LUT            | 
-|round       | instfeistel/instS3/out_bits | 64x4          | LUT            | 
-|round       | instfeistel/instS6/out_bits | 64x4          | LUT            | 
 |round       | instfeistel/instS2/out_bits | 64x4          | LUT            | 
+|round       | instfeistel/instS4/out_bits | 64x4          | LUT            | 
+|round       | instfeistel/instS5/out_bits | 64x4          | LUT            | 
+|round       | instfeistel/instS6/out_bits | 64x4          | LUT            | 
 |round       | instfeistel/instS8/out_bits | 64x4          | LUT            | 
 |round       | instfeistel/instS4/out_bits | 64x4          | LUT            | 
 |round       | instfeistel/instS5/out_bits | 64x4          | LUT            | 
-|round       | instfeistel/instS7/out_bits | 64x4          | LUT            | 
-|round       | instfeistel/instS1/out_bits | 64x4          | LUT            | 
-|round       | instfeistel/instS3/out_bits | 64x4          | LUT            | 
-|round       | instfeistel/instS6/out_bits | 64x4          | LUT            | 
+|round       | instfeistel/instS5/out_bits | 64x4          | LUT            | 
 |round       | instfeistel/instS2/out_bits | 64x4          | LUT            | 
+|round       | instfeistel/instS8/out_bits | 64x4          | LUT            | 
+|round       | instfeistel/instS5/out_bits | 64x4          | LUT            | 
 |round       | instfeistel/instS4/out_bits | 64x4          | LUT            | 
 |round       | instfeistel/instS5/out_bits | 64x4          | LUT            | 
 |round       | instfeistel/instS7/out_bits | 64x4          | LUT            | 
 |round       | instfeistel/instS1/out_bits | 64x4          | LUT            | 
-|round       | instfeistel/instS3/out_bits | 64x4          | LUT            | 
-|round       | instfeistel/instS6/out_bits | 64x4          | LUT            | 
-|round       | instfeistel/instS2/out_bits | 64x4          | LUT            | 
-|round       | instfeistel/instS4/out_bits | 64x4          | LUT            | 
-|round       | instfeistel/instS3/out_bits | 64x4          | LUT            | 
-|round       | instfeistel/instS2/out_bits | 64x4          | LUT            | 
-|round       | instfeistel/instS5/out_bits | 64x4          | LUT            | 
-|round       | instfeistel/instS2/out_bits | 64x4          | LUT            | 
-|round       | instfeistel/instS5/out_bits | 64x4          | LUT            | 
-|round       | instfeistel/instS6/out_bits | 64x4          | LUT            | 
-|round       | instfeistel/instS2/out_bits | 64x4          | LUT            | 
-|round       | instfeistel/instS5/out_bits | 64x4          | LUT            | 
-|round       | instfeistel/instS7/out_bits | 64x4          | LUT            | 
 |round       | instfeistel/instS3/out_bits | 64x4          | LUT            | 
 |round       | instfeistel/instS6/out_bits | 64x4          | LUT            | 
 |round       | instfeistel/instS2/out_bits | 64x4          | LUT            | 
@@ -294,28 +264,23 @@ ROM: Preliminary Mapping	Report
 |round       | instfeistel/instS3/out_bits | 64x4          | LUT            | 
 |round       | instfeistel/instS6/out_bits | 64x4          | LUT            | 
 |round       | instfeistel/instS2/out_bits | 64x4          | LUT            | 
-|round       | instfeistel/instS8/out_bits | 64x4          | LUT            | 
 |round       | instfeistel/instS4/out_bits | 64x4          | LUT            | 
-|round       | instfeistel/instS5/out_bits | 64x4          | LUT            | 
-|round       | instfeistel/instS7/out_bits | 64x4          | LUT            | 
 |round       | instfeistel/instS3/out_bits | 64x4          | LUT            | 
 |round       | instfeistel/instS8/out_bits | 64x4          | LUT            | 
-|round       | instfeistel/instS4/out_bits | 64x4          | LUT            | 
-|round       | instfeistel/instS5/out_bits | 64x4          | LUT            | 
-|round       | instfeistel/instS7/out_bits | 64x4          | LUT            | 
-|round       | instfeistel/instS3/out_bits | 64x4          | LUT            | 
-|round       | instfeistel/instS6/out_bits | 64x4          | LUT            | 
 |round       | instfeistel/instS5/out_bits | 64x4          | LUT            | 
 |round       | instfeistel/instS1/out_bits | 64x4          | LUT            | 
-|round       | instfeistel/instS2/out_bits | 64x4          | LUT            | 
-|round       | instfeistel/instS5/out_bits | 64x4          | LUT            | 
-|round       | instfeistel/instS5/out_bits | 64x4          | LUT            | 
-|round       | instfeistel/instS7/out_bits | 64x4          | LUT            | 
 |round       | instfeistel/instS3/out_bits | 64x4          | LUT            | 
 |round       | instfeistel/instS6/out_bits | 64x4          | LUT            | 
 |round       | instfeistel/instS2/out_bits | 64x4          | LUT            | 
 |round       | instfeistel/instS8/out_bits | 64x4          | LUT            | 
 |round       | instfeistel/instS4/out_bits | 64x4          | LUT            | 
+|round       | instfeistel/instS2/out_bits | 64x4          | LUT            | 
+|round       | instfeistel/instS8/out_bits | 64x4          | LUT            | 
+|round       | instfeistel/instS4/out_bits | 64x4          | LUT            | 
+|round       | instfeistel/instS3/out_bits | 64x4          | LUT            | 
+|round       | instfeistel/instS6/out_bits | 64x4          | LUT            | 
+|round       | instfeistel/instS5/out_bits | 64x4          | LUT            | 
+|round       | instfeistel/instS2/out_bits | 64x4          | LUT            | 
 |round       | instfeistel/instS5/out_bits | 64x4          | LUT            | 
 |round       | instfeistel/instS7/out_bits | 64x4          | LUT            | 
 |round       | instfeistel/instS1/out_bits | 64x4          | LUT            | 
@@ -323,10 +288,40 @@ ROM: Preliminary Mapping	Report
 |round       | instfeistel/instS6/out_bits | 64x4          | LUT            | 
 |round       | instfeistel/instS2/out_bits | 64x4          | LUT            | 
 |round       | instfeistel/instS8/out_bits | 64x4          | LUT            | 
+|round       | instfeistel/instS4/out_bits | 64x4          | LUT            | 
+|round       | instfeistel/instS5/out_bits | 64x4          | LUT            | 
+|round       | instfeistel/instS1/out_bits | 64x4          | LUT            | 
+|round       | instfeistel/instS3/out_bits | 64x4          | LUT            | 
+|round       | instfeistel/instS6/out_bits | 64x4          | LUT            | 
+|round       | instfeistel/instS2/out_bits | 64x4          | LUT            | 
+|round       | instfeistel/instS4/out_bits | 64x4          | LUT            | 
+|round       | instfeistel/instS5/out_bits | 64x4          | LUT            | 
+|round       | instfeistel/instS3/out_bits | 64x4          | LUT            | 
+|round       | instfeistel/instS4/out_bits | 64x4          | LUT            | 
+|round       | instfeistel/instS5/out_bits | 64x4          | LUT            | 
+|round       | instfeistel/instS8/out_bits | 64x4          | LUT            | 
+|round       | instfeistel/instS5/out_bits | 64x4          | LUT            | 
 |round       | instfeistel/instS7/out_bits | 64x4          | LUT            | 
 |round       | instfeistel/instS1/out_bits | 64x4          | LUT            | 
+|round       | instfeistel/instS3/out_bits | 64x4          | LUT            | 
 |round       | instfeistel/instS6/out_bits | 64x4          | LUT            | 
+|round       | instfeistel/instS2/out_bits | 64x4          | LUT            | 
+|round       | instfeistel/instS8/out_bits | 64x4          | LUT            | 
 |round       | instfeistel/instS4/out_bits | 64x4          | LUT            | 
+|round       | instfeistel/instS5/out_bits | 64x4          | LUT            | 
+|round       | instfeistel/instS3/out_bits | 64x4          | LUT            | 
+|round       | instfeistel/instS2/out_bits | 64x4          | LUT            | 
+|round       | instfeistel/instS8/out_bits | 64x4          | LUT            | 
+|round       | instfeistel/instS5/out_bits | 64x4          | LUT            | 
+|round       | instfeistel/instS7/out_bits | 64x4          | LUT            | 
+|round       | instfeistel/instS3/out_bits | 64x4          | LUT            | 
+|round       | instfeistel/instS6/out_bits | 64x4          | LUT            | 
+|round       | instfeistel/instS8/out_bits | 64x4          | LUT            | 
+|round       | instfeistel/instS4/out_bits | 64x4          | LUT            | 
+|round       | instfeistel/instS8/out_bits | 64x4          | LUT            | 
+|round       | instfeistel/instS4/out_bits | 64x4          | LUT            | 
+|round       | instfeistel/instS3/out_bits | 64x4          | LUT            | 
+|round       | instfeistel/instS5/out_bits | 64x4          | LUT            | 
 |round       | instfeistel/instS5/out_bits | 64x4          | LUT            | 
 +------------+-----------------------------+---------------+----------------+
 
@@ -337,19 +332,19 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1352.129 ; gain = 241.762
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 1347.016 ; gain = 205.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1352.129 ; gain = 241.762
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 1347.016 ; gain = 205.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1352.129 ; gain = 241.762
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 1347.023 ; gain = 205.656
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -367,37 +362,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 1357.215 ; gain = 246.848
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 1355.414 ; gain = 214.047
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 1357.215 ; gain = 246.848
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 1355.414 ; gain = 214.047
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 1357.215 ; gain = 246.848
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 1355.414 ; gain = 214.047
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1357.215 ; gain = 246.848
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 1355.414 ; gain = 214.047
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1357.215 ; gain = 246.848
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 1355.414 ; gain = 214.047
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1357.215 ; gain = 246.848
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 1355.414 ; gain = 214.047
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -428,25 +423,25 @@ Report Cell Usage:
 |13    |OBUFT  |     6|
 +------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1357.215 ; gain = 246.848
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 1355.414 ; gain = 214.047
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 1357.215 ; gain = 116.715
-Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1357.215 ; gain = 246.848
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:29 . Memory (MB): peak = 1355.414 ; gain = 89.254
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 1355.414 ; gain = 214.047
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1369.238 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1367.477 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 11 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1372.285 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1370.484 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 73 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:42 . Memory (MB): peak = 1372.285 ; gain = 261.918
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:48 . Memory (MB): peak = 1370.484 ; gain = 229.117
 INFO: [Common 17-1381] The checkpoint 'C:/Users/qkoenin/Desktop/Lab2DLD/Lab2/Vivado/Lab1/Lab1.runs/synth_1/top_demo.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_demo_utilization_synth.rpt -pb top_demo_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Mar  8 18:28:03 2023...
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 22 15:01:06 2023...

@@ -1,0 +1,42 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Wed Mar 22 15:12:52 2023
+| Host         : CEAT-ENDV350-09 running 64-bit major release  (build 9200)
+| Command      : report_timing -file route_report_timing_0.rpt -rpx route_report_timing_0.rpx
+| Design       : top_demo
+| Device       : 7z020-clg484
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+----------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack:                    inf
+  Source:                 dig2_reg[1]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            sseg_cb
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        14.055ns  (logic 4.841ns (34.442%)  route 9.214ns (65.558%))
+  Logic Levels:           5  (FDRE=1 LUT4=1 LUT6=1 MUXF7=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X25Y46         FDRE                         0.000     0.000 r  dig2_reg[1]/C
+    SLICE_X25Y46         FDRE (Prop_fdre_C_Q)         0.456     0.456 r  dig2_reg[1]/Q
+                         net (fo=7, routed)           1.213     1.669    dig2_reg_n_0_[1]
+    SLICE_X26Y47         LUT4 (Prop_lut4_I1_O)        0.153     1.822 r  sseg_cb_OBUF_inst_i_5/O
+                         net (fo=1, routed)           0.873     2.695    driver/sseg_cb_OBUF_inst_i_1_0
+    SLICE_X28Y48         LUT6 (Prop_lut6_I5_O)        0.331     3.026 r  driver/sseg_cb_OBUF_inst_i_3/O
+                         net (fo=1, routed)           0.000     3.026    driver/sseg_cb_OBUF_inst_i_3_n_0
+    SLICE_X28Y48         MUXF7 (Prop_muxf7_I1_O)      0.217     3.243 r  driver/sseg_cb_OBUF_inst_i_1/O
+                         net (fo=1, routed)           7.129    10.371    sseg_cb_OBUF
+    H17                  OBUF (Prop_obuf_I_O)         3.684    14.055 r  sseg_cb_OBUF_inst/O
+                         net (fo=0)                   0.000    14.055    sseg_cb
+    H17                                                               r  sseg_cb (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+
